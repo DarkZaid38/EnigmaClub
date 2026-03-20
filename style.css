@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body{
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-items: center;
+    background-color: #192928;
+    box-shadow: #24d12a 0px -15px 55px;
+    position: relative;
+    z-index: 1;
+}
+
+.header_img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.header_container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+
+.header_title{
+    font-size: 2.2rem;    
+    color: #4fb848;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding-bottom: 0.3rem;
+    transition: all 200ms linear 0ms;
+}   
+
+.header_title_anchor:hover .header_title{
+    color: rgb(163, 157, 157);
+    transition: all 250ms linear 0ms;
+}
+
+#Team:hover {
+    color: rgb(163, 157, 157);
+    transition: all 250ms linear 0ms;
+}
+#Projects:hover {
+    color: rgb(163, 157, 157);
+    transition: all 250ms linear 0ms;
+}
+#Contact:hover {
+    color: rgb(163, 157, 157);
+    transition: all 250ms linear 0ms;
+}
+#Blogs:hover {
+    color: rgb(163, 157, 157);
+    transition: all 250ms linear 0ms;
+}
+
+.nav_items{
+    
+    flex-direction: row;
+    gap: 2rem;
+    display: none;
+
+}
+
+.nav_conatiner ul,a{
+    list-style-type: none;
+    font-size: 1rem;
+    color: #4fb848;
+}
+
+@media (min-width:800px) {
+    .nav_items{
+        display: flex;
+    }
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: none;
+}
+
+.dropdown-content {
+  display: none; 
+  position: absolute;
+  background-color: #192928;
+  max-width: 7rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+    width: 4rem;
+  padding: 1rem 1.5rem 1rem 0.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover over the parent container */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+@media screen and (max-width:800px) {
+    .dropdown{
+        display: block;
+    }
+    
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-color: #091409;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bg_video{
+    position:relative ; 
+    width: 100%;
+    min-height: 100%;
+    opacity: 0.2;
+    object-fit: fill;    
+}
+
+.hero_section{
+    width: 75%;
+    min-height:70% ;
+    border-radius: 10px;
+    background-color: #ffffff10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+
+.right_content{
+    margin-left:2rem;
+}
+
+.left_content{
+    margin-left: 2rem;
+}
+
+.hero_title{
+    font-size: 2.5rem;
+    color: #f6e3e3;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    
+
+}
+
+.hero_decs{
+    font-size: 1rem;
+    color: rgb(203, 203, 203);
+}
+
+.content_img img{
+    width: 85%;
+    height: 70%;
+    
+}
+
+
+@media (max-width:800px) {
+
+    .bg_video{
+        position:absolute ; 
+        object-fit: fill;
+        width: 100%;
+        min-height: 100%;
+        opacity: 0.2;
+}
+
+    .content{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #091413;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+    .hero_section{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+}
+
+
+.team_container{
+    background-color: #091413;
+    width: 100%;
+    height: 100%;
+}
